@@ -22,7 +22,7 @@ async function identify_user(agent)
   const snap = await client.db("chatbot").collection("user_table").findOne({acct_num: acct_num});
   
   if(snap==null){
-	  await agent.add("Re-Enter your phone number");
+	  await agent.add("Re-Enter your account number");
 
   }
   else
